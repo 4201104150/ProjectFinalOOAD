@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataSmartBus">
+  <DataContextMoniker Name="/DataSmartBusDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6ba95c78-2396-4a97-b97e-4e00184a690b" absoluteBounds="2.25, 1.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataSmartBusDataContext/ThongTinKhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76814b3c-9241-4763-a297-23ff98cffaab" absoluteBounds="2.2649999999999997, 1.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
