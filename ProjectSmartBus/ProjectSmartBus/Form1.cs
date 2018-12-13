@@ -56,6 +56,7 @@ namespace ProjectSmartBus
         private void Form1_Load(object sender, EventArgs e)
         {
             comboBox1.Hide();
+            textBox1.Enabled = false;
             CaptureDevice = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             foreach (FilterInfo Device in CaptureDevice)
             {
@@ -90,5 +91,23 @@ namespace ProjectSmartBus
             
         }
 
+        private void label2_TextChanged(object sender, EventArgs e)
+        {
+            ThongTinKhachHang thongTin = db.ThongTinKhachHangs.SingleOrDefault(p => p.ID == label2.Text);
+            if(thongTin!=null)
+            {
+                thongTin.CheckHanhDong = 1;
+            }
+            db.SubmitChanges();
+            string ten = db.ThongTinKhachHangs.Where(p => p.ID == label2.Text).Select(p => p.HoTen).ToString();
+            string ngaysinh = db.ThongTinKhachHangs.Where(p => p.ID == label2.Text).Select(p => p.NgaySinh).ToString();
+            string gioitinh = db.ThongTinKhachHangs.Where(p => p.ID == label2.Text).Select(p => p.GioiTinh).ToString();
+            string SDT = db.ThongTinKhachHangs.Where(p => p.ID == label2.Text).Select(p => p.SDT).ToString();
+            string tien = db.ThongTinKhachHangs.Where(p => p.ID == label2.Text).Select(p => p.SoTienHienTai).ToString();
+            string checkHD = db.ThongTinKhachHangs.Where(p => p.ID == label2.Text).Select(p => p.CheckHanhDong).ToString();
+
+            KhachHang kh = new KhachHang(label2.Text,ten,ngaysinh,gioitinh,SDT,int.Parse(tien),int.Parse(checkHD));
+            textBox1.Text = kh.ToString();
+        }
     }
 }
