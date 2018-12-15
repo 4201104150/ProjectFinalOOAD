@@ -130,7 +130,7 @@ namespace ProjectSmartBus
                 {
                     MessageBox.Show("Mời quét lại !");
                     label2.Hide();
-                   
+                    //dem++;
                 }
             }
             else

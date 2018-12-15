@@ -33,7 +33,7 @@ namespace ProjectSmartBus
 
         public override string ToString()
         {
-            return "ID: "+maKH+"\n Tên khách hàng: "+tenKH+"\nNgày sinh: "+ngaySinh+"\nGiới tính: "+gioiTinh+"\nSố điện thoại: "+SDT+"\nSố tiền hiện có: "+soTien;
+            return "ID: "+maKH+ "\r\nTên khách hàng: " + tenKH+ "\r\nNgày sinh: " + ngaySinh+ "\r\nGiới tính: " + gioiTinh+ "\r\nSố điện thoại: " + SDT+ "\r\nSố tiền hiện có: " + soTien;
         }
 
         public int tinhTien()
